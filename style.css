@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+}
+body{
+    line-height:1.6;
+    background:#f9f9f9;
+    color:#333
+}
+a{
+    text-decoration:none;
+    color:inherit
+}
+
+/* Navbar */
+header{
+    background:#333;color:#fff;
+    padding:15px 20px;
+    position:sticky;
+    top:0;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:15px
+}
+nav a{
+    color:#fff;
+    font-weight:bold
+}
+
+/* Sections */
+section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto
+}
+h1,h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#222
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center
+}
+.hero img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-bottom:15px;
+    border:3px solid black
+}
+.hero h1{
+    font-size:2rem
+}
+.hero p{
+    color:rgb(139, 127, 127)
+}
+.highlight{
+    color:blue;
+}
+
+/* About */
+.about p{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    color:#555
+}
+
+/* Skills */
+.skills-grid,.projects-grid{
+    display:grid;
+    gap:20px
+}
+.skills-grid{
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    max-width:800px;
+    margin:auto
+}
+.skill,.project{
+    background:#fff;
+    padding:15px;text-align:center;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    transition:.2s
+}
+.skill{
+    font-weight:bold
+}
+.skill:hover{
+    transform:translateY(-5px);
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    background:#f0f0ff
+}
+.projects-grid{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr))
+}
+.project:hover{
+    transform:translateY(-5px);
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    background:#f0f0ff
+}
+
+/* Contact */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:500px;
+    margin:auto
+}
+input,textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px
+}
+button{
+    padding:10px;
+    background:#333;color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer
+}
+button:hover{
+    background:#555
+}
+.formMsg{
+    text-align:center;
+    margin-top:10px;
+    color:green
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#333;
+    color:#fff;
+    margin-top:20px}
+.social-links{
+    margin-top:10px
+}
+.social-links a{
+    margin:0 10px;
+    color:#fff;
+    font-weight:bold;
+    transition:.3s
+}
+.social-links a:hover{
+    color:#1a10da
+}
